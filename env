@@ -1,0 +1,6 @@
+TELEGRAM_BOT_TOKEN="coloque_aqui_o_token_do_seu_bot"
+BSCSCAN_API_KEY="coloque_aqui_sua_api_key_do_bscscan"
+TOKEN_ADDRESS="0x653Ac7e8E2Ec011c168b6eF2968E2A0cc50194FE"
+MAX_TOKENS=300000000000000000000000
+GRUPO_HOLDERS="https://t.me/+VOlyXYwBuThmYmVh"
+GRUPO_ESPERA="https://t.me/+JEQX13GN1Gc3ODYx"

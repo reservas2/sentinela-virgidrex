@@ -36,7 +36,7 @@ def get_token_balance(wallet: str) -> float:
             return raw_balance / (10 ** 18)
         else:
             # Tratar erros específicos da API do BSCScan
-            logger.error(f"Erro da API do BSCScan: {data.get(\'message\', \'Mensagem não disponível\')} - {data.get(\'result\', \'Resultado não disponível\')}")
+            logger.error(f"Erro da API do BSCScan: {data.get('message', 'Mensagem não disponível')} - {data.get('result', 'Resultado não disponível')}")
             return 0
     except requests.exceptions.Timeout:
         logger.error("Erro: Tempo limite da requisição excedido ao conectar ao BSCScan.")

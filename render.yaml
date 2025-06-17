@@ -3,8 +3,8 @@ services:
     name: sentinela-virgidrex
     runtime: python
     branch: main
-    buildCommand: "pip install --user -r requirements.txt"
-    startCommand: "env PYTHONPATH=$HOME/.local/lib/python3.11/site-packages python3.11 main.py"
+    buildCommand: pip install --break-system-packages -r requirements.txt
+    startCommand: PYTHONPATH=/opt/render/.local/lib/python3.11/site-packages python3.11 main.py
     envVars:
       - key: TELEGRAM_BOT_TOKEN
         fromDotEnv: true

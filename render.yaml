@@ -4,17 +4,17 @@ services:
     runtime: python
     branch: main
     buildCommand: pip install --break-system-packages -r requirements.txt
-    startCommand: PYTHONPATH=/opt/render/.local/lib/python3.11/site-packages python3.11 main.py
+    startCommand: python main.py
     envVars:
       - key: TELEGRAM_BOT_TOKEN
-        value: ${TELEGRAM_BOT_TOKEN}
+        fromDotEnv: true
       - key: BSCSCAN_API_KEY
-        value: ${BSCSCAN_API_KEY}
+        fromDotEnv: true
       - key: TOKEN_ADDRESS
-        value: ${TOKEN_ADDRESS}
+        fromDotEnv: true
       - key: MAX_TOKENS
-        value: ${MAX_TOKENS}
+        fromDotEnv: true
       - key: GRUPO_HOLDERS
-        value: ${GRUPO_HOLDERS}
+        fromDotEnv: true
       - key: GRUPO_ESPERA
-        value: ${GRUPO_ESPERA}
+        fromDotEnv: true

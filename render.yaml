@@ -1,7 +1,7 @@
 services:
   - type: web
     name: sentinela-virgidrex
-    runtime: python
+    runtime: python3.11  # <-- Nova linha
     branch: main
     buildCommand: "python3.11 -m pip install --break-system-packages -r requirements.txt"
     startCommand: "PYTHONPATH=/opt/render/.local/lib/python3.11/site-packages python3.11 main.py"

@@ -4,7 +4,7 @@ services:
     runtime: python
     branch: main
     buildCommand: pip install --break-system-packages -r requirements.txt
-    startCommand: PYTHONPATH=/opt/render/.local/lib/python3.11/site-packages python3.11 main.py
+    startCommand: python3.11 main.py
     envVars:
       - key: TELEGRAM_BOT_TOKEN
         value: ${TELEGRAM_BOT_TOKEN}

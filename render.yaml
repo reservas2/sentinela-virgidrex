@@ -1,10 +1,10 @@
 services:
   - type: web
     name: sentinela-virgidrex
-    runtime: python
+    runtime: python3.11
     branch: main
-    buildCommand: pip install --break-system-packages -r requirements.txt
-    startCommand: python main.py
+    buildCommand: "python3.11 -m pip install --break-system-packages -r requirements.txt"
+    startCommand: "python3.11 main.py"
     envVars:
       - key: TELEGRAM_BOT_TOKEN
         value: ${TELEGRAM_BOT_TOKEN}
@@ -19,4 +19,4 @@ services:
       - key: GRUPO_ESPERA
         value: ${GRUPO_ESPERA}
       - key: PYTHONPATH
-        value: /opt/render/.local/lib/python3.11/site-packages
+        value: "/opt/render/.local/lib/python3.11/site-packages"

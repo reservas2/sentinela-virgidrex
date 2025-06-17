@@ -18,3 +18,5 @@ services:
         value: ${GRUPO_HOLDERS}
       - key: GRUPO_ESPERA
         value: ${GRUPO_ESPERA}
+ key: PYTHONPATH
+        value: "/opt/render/.local/lib/python3.11/site-packages"

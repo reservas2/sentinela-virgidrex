@@ -1,10 +1,11 @@
 services:
   - type: web
     name: sentinela-virgidrex
-    runtime: python3.11
+    runtime: python
+    pythonVersion: 3.11.9
     branch: main
-    buildCommand: "python3.11 -m pip install --break-system-packages -r requirements.txt"
-    startCommand: "python3.11 main.py"
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python main.py"
     envVars:
       - key: TELEGRAM_BOT_TOKEN
         value: ${TELEGRAM_BOT_TOKEN}

@@ -6,3 +6,4 @@ sniffio
 anyio
 h11
 certifi
+typing_extensions

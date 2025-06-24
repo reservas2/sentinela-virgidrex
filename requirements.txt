@@ -1,4 +1,6 @@
 python-telegram-bot==20.7
 requests
 python-dotenv
-httpcore[asyncio]
+httpcore==1.0.9
+anyio
+sniffio
